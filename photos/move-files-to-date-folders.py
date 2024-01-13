@@ -5,9 +5,6 @@ from PIL import Image
 
 dry_run = False
 
-# if not os.name == 'nt' and not dry_run:
-	# raise Exception('This script can only be run on Windows for now')
-
 move_command = 'move' if os.name == 'nt' else 'mv'
 
 def get_date_taken(path):
